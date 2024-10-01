@@ -91,28 +91,27 @@ public class Main
     String termsAndConditions, char sex, String uscisNum, 
     String dateOfBirth, String validDate, String expireDate)
     {
-        String formatcard1, formatcard2, formatcard3, formatcard4, formatcard5, formatcard6, formatcard7, formatcard8, formatcard9, formatcard10, formatcard11, formatcard12, formatcard13, 
-        formatcard14, formatcard15, formatcard16, formatcard17, formatcard18, formatcard19;
+        String fullCard = "";
 
-        formatcard1 = String.format("╔══════════════════════════════════════════════════════════════════════╗%n");
-        formatcard2 = String.format("║%35s%35s║%n", TITLE_USA, "");
-        formatcard3 = String.format("║%60s%10s║%n", TITLE_EAC, "");
-        formatcard4 = String.format("║%-25s%-45s║%n", "", LABEL_SURNAME);
-        formatcard5 = String.format("║%-25s%-45s║%n", "", surname);
-        formatcard6 = String.format("║%-25s%-45s║%n", ASCII_ART_0, LABEL_GIVEN_NAME);
-        formatcard7 = String.format("║%-25s%-45s║%n", ASCII_ART_1, givenName);
-        formatcard8 = String.format("║%-25s%-15s%-15s%-15s║%n", ASCII_ART_2, LABEL_USCIS_NUM, LABEL_CATEGORY, LABEL_CARD_NUM);
-        formatcard9 = String.format("║%-25s%-15s%-15s%-15s║%n", ASCII_ART_3, uscisNum, category, cardNum);
-        formatcard10 =  String.format("║%-25s%-45s║%n", ASCII_ART_4, LABEL_BIRTH_COUNTRY);
-        formatcard11 = String.format("║%-25s%-45s║%n", ASCII_ART_5, birthCountry);
-        formatcard12 = String.format("║%-25s%-45s║%n", ASCII_ART_6, LABEL_TERMS_CONDITIONS);
-        formatcard13 = String.format("║%-25s%-45s║%n", ASCII_ART_7, termsAndConditions);
-        formatcard14 = String.format("║%-25s%-15s%-30s║%n", ASCII_ART_8, LABEL_BIRTH_DATE, LABEL_SEX);
-        formatcard15 = String.format("║%-25s%-15s%-30s║%n", ASCII_ART_9, dateOfBirth, sex);
-        formatcard16 = String.format("║%-25s%-15s%-30s║%n", "", LABEL_VALID_DATE, validDate);
-        formatcard17 = String.format("║%-25s%-15s%-30s║%n", "", LABEL_EXPIRE_DATE, expireDate);
-        formatcard18 = String.format("║%-25s%-45s║%n", ASCII_CREDIT, LABEL_REENTRY_DISCLAIMER);
-        formatcard19 = String.format("╚══════════════════════════════════════════════════════════════════════╝%n");
+        fullCard += String.format("╔══════════════════════════════════════════════════════════════════════╗%n");
+        fullCard += String.format("║%35s%35s║%n", TITLE_USA, "");
+        fullCard += String.format("║%60s%10s║%n", TITLE_EAC, "");
+        fullCard += String.format("║%-25s%-45s║%n", "", LABEL_SURNAME);
+        fullCard += String.format("║%-25s%-45s║%n", "", surname);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_ART_0, LABEL_GIVEN_NAME);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_ART_1, givenName);
+        fullCard += String.format("║%-25s%-15s%-15s%-15s║%n", ASCII_ART_2, LABEL_USCIS_NUM, LABEL_CATEGORY, LABEL_CARD_NUM);
+        fullCard += String.format("║%-25s%-15s%-15s%-15s║%n", ASCII_ART_3, uscisNum, category, cardNum);
+        fullCard +=  String.format("║%-25s%-45s║%n", ASCII_ART_4, LABEL_BIRTH_COUNTRY);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_ART_5, birthCountry);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_ART_6, LABEL_TERMS_CONDITIONS);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_ART_7, termsAndConditions);
+        fullCard += String.format("║%-25s%-15s%-30s║%n", ASCII_ART_8, LABEL_BIRTH_DATE, LABEL_SEX);
+        fullCard += String.format("║%-25s%-15s%-30s║%n", ASCII_ART_9, dateOfBirth, sex);
+        fullCard += String.format("║%-25s%-15s%-30s║%n", "", LABEL_VALID_DATE, validDate);
+        fullCard += String.format("║%-25s%-15s%-30s║%n", "", LABEL_EXPIRE_DATE, expireDate);
+        fullCard += String.format("║%-25s%-45s║%n", ASCII_CREDIT, LABEL_REENTRY_DISCLAIMER);
+        fullCard += String.format("╚══════════════════════════════════════════════════════════════════════╝%n");
     }
 
 
